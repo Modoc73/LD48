@@ -2,6 +2,8 @@ function followPoint(px, py){
 	var dir = point_direction(x, y, px, py);
 	var dist = point_distance(x, y, px, py);
 	
+	facing_direction = dir;
+	
 	if (dist > minDistance) {
 		var spdx = sqr(abs(x-px)/dist) * acceleration;
 		var spdy = sqr(abs(y-py)/dist) * acceleration;
@@ -20,8 +22,11 @@ function followPoint(px, py){
 }
 
 function stopChasing() {
-	chaseX = x;
-	chaseY = y;
+	endChaseX = x;
+	endChaseY = y;
+	chaseTick = 0;
+
+	
 	isChasing = false;
 }
 
