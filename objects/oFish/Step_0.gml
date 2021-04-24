@@ -14,10 +14,10 @@ if (instance_exists(oController)) {
 
 
 
-if (isFollowing) {
-	followPoint(chaseX, chaseY);
-} else {
+if (isFollowing == false && object_index != oPlayerFish) {
 	evadePoint(chaseX, chaseY);
+} else {
+	followPoint(chaseX, chaseY);
 }
 
 addWaterFriction();

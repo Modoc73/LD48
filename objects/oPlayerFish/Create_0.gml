@@ -1,8 +1,8 @@
 event_inherited();
 vx = 0;
 vy = 0;
-maxSpeed = 32;
-acceleration = 0.3;
+maxSpeed = 8;
+acceleration = 0.32;
 minDistance = 32;
 
 chaseX = x;
@@ -23,3 +23,4 @@ randomY = 0.03;
 
 randomDistX = 2;
 randomDistY = 1.6;
+
