@@ -10,3 +10,4 @@ for(var i = 0; i < health; i++) {
 }
 
 
+draw_text(10, 10, "Current Depth: " + string(getCurrentDepth(oPlayerFish)));

@@ -36,3 +36,18 @@ function addWaterFriction() {
 	vy *= 0.99;
 }
 
+
+function getCurrentDepth(obj) {
+	if (!instance_exists(oBackground)) return 0;
+	if (!instance_exists(obj)) return 0;
+	
+	var level = 0;
+	
+	for (var i = 0; i < array_length(oBackground.backgroundLevel); i++) {
+		if (obj.y > oBackground.backgroundLevel[i, 0] && obj.y <= oBackground.backgroundLevel[i, 1]) {
+			level = i;
+			break;
+		}
+	}
+	return level;
+}
