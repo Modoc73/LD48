@@ -1,6 +1,6 @@
-health = 4;
+ health = 4;
 totalHeight = 0;
-unlockedLevel = 0;
+unlockedLevel = 1;
 
 display_set_gui_size(640, 360);
 
@@ -20,5 +20,6 @@ repeat(50) {
 	particlesDust();	
 }
 
-font = font_add_sprite_ext(sprFont, "abcdefghijklmnopqrstuvwxyz", false, 0);
+font = font_add_sprite_ext(sprFont, "abcdefghijklmnopqrstuvwxyz1234567890:.", false, 0);
 draw_set_font(font);
+topText = "";

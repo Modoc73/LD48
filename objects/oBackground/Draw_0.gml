@@ -70,8 +70,9 @@ draw_set_color(c_white);
 
 
 for (var i = 1; i < array_length(backgroundLevel); i++) {
-	if (oController.unlockedLevel > i) break;
-	var yy = backgroundLevel[i, 0];
-	draw_line(0, yy, room_width, yy);
-	draw_sprite(sprLocked, 0, cx + (cw*0.5), yy);
+	if (oController.unlockedLevel <= i) {
+		var yy = backgroundLevel[i, 0];
+		draw_line(0, yy, room_width, yy);
+		draw_sprite(sprLocked, 0, cx + (cw*0.5), yy);
+	}
 }

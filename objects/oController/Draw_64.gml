@@ -10,10 +10,21 @@ for(var i = 0; i < health; i++) {
 }
 
 draw_set_font(font);
+draw_set_halign(fa_left);
 // Draw Tasks
-var sprW = 12;
+var sprW = 48;
 var xpos = (sprW*0.5) + padding;
-var ypos = (sprW*0.5) + padding;
+var ypos = (24*0.5) + padding;
 draw_sprite(sprTasks, currentTask, xpos , ypos);	
 
-draw_text(xpos + 24, ypos, taskName);
+draw_text(xpos + 24, ypos, string(taskName) + " " + string(taskText));
+
+
+// Draw top text
+if (string_length(topText) > 0) {
+	draw_set_halign(fa_center);
+	var xpos = w/2;
+	var ypos = (sprW*0.5) + padding;
+
+	draw_text(xpos + 24, ypos, topText);
+}
