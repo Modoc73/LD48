@@ -34,3 +34,4 @@ for(var i = 1; i < array_length(backgroundLevel); i++) {
 totalHeight = height;
 
 surface = -1;
+surfaceRocks = -1;
