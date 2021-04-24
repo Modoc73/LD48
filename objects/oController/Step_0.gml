@@ -7,3 +7,5 @@ cameraFollow(oPlayerFish);
 spawner();
 
 particlesDust();
+
+doTasks();

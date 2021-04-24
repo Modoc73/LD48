@@ -35,6 +35,20 @@ if (chasingTimer > room_speed*10) forceStop = true;
 
 
 
+var food = instance_nearest(x, y, oFishFood);
+
+if (food != noone) {
+	if (distance_to_object(food) < 100) {
+		chaseX = food.x;
+		chaseY = food.y;
+		isChasing = true;
+		forceStop = true;
+	} 
+}
+
+
+
+
 if (y > getDepthBottom(self)) {
 	chaseY = getDepthTop(self);
 	endChaseY = getDepthTop(self)+random_range(0, 50);
