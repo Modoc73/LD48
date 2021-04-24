@@ -1,9 +1,9 @@
 event_inherited();
 vx = 0;
 vy = 0;
-maxSpeed = 8;
-acceleration = 0.32;
-minDistance = 32;
+maxSpeed = 7;
+acceleration = 0.3;
+minDistance = 48;
 
 chaseX = x;
 chaseY = y;
