@@ -35,3 +35,4 @@ function addWaterFriction() {
 	vx *= 0.99;
 	vy *= 0.99;
 }
+

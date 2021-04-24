@@ -18,9 +18,15 @@ if (isChasing) {
 	chaseY = endChaseY + cos(chaseTick*0.01)*(minDistance*1.5);
 	
 }
+
+if (instance_exists(oController)) {
+	chaseY = clamp(chaseY, 100, oController.totalHeight-100);
+}
+
+
+
+
 followPoint(chaseX, chaseY);
-
-
 
 addWaterFriction();
 

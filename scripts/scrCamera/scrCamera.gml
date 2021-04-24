@@ -35,11 +35,12 @@ function cameraFollow(obj){
 		cameraY = max(cameraY - (distY*0.1*percentY), cameraYTarget);	
 	}
 	
-	show_debug_message(percentX);
 	
 	
 	var cx = cameraX - (w*0.5);
 	var cy = cameraY - (h*0.5);
+	
+	cy = clamp(cy, 0, totalHeight - h);
 	
 	camera_set_view_pos(view_camera[0], cx, cy);
 }
