@@ -69,8 +69,7 @@ function doCollisions() {
 		if (!place_meeting(x + sign(vx), y, oWall)) {
 			x += sign(vx);
 		} else {
-			chaseX = x;
-			endChaseX = x;
+			endChaseX += sign(vx)*-5;
 			vx = 0;
 			break;
 		}
@@ -80,8 +79,7 @@ function doCollisions() {
 		if (!place_meeting(x, y + sign(vy), oWall)) {
 			y += sign(vy);
 		} else {
-			chaseY = y;
-			endChaseY = y;
+			endChaseY += sign(vy)*-5;
 			vy = 0;
 			break;
 		}

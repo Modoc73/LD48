@@ -1,7 +1,7 @@
 event_inherited();
 vx = 0;
 vy = 0;
-maxSpeed = 7;
+maxSpeed = 5;
 acceleration = 0.3;
 minDistance = 48;
 

@@ -1,7 +1,7 @@
 vx = random(10);
 vy = random(10);
-maxSpeed = random_range(1, 3);
-acceleration = random_range(0.03, 0.15);
+maxSpeed = random_range(1, 3.5);
+acceleration = random_range(0.03, 0.2);
 minDistance = 48;
 
 chaseX = x;
