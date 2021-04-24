@@ -64,6 +64,32 @@ function addWaterFriction() {
 }
 
 
+function doCollisions() {
+	for (var xx = 0; xx < abs(vx); xx++) {
+		if (!place_meeting(x + sign(vx), y, oWall)) {
+			x += sign(vx);
+		} else {
+			chaseX = x;
+			endChaseX = x;
+			vx = 0;
+			break;
+		}
+	}
+	
+	for (var yy = 0; yy < abs(vy); yy++) {
+		if (!place_meeting(x, y + sign(vy), oWall)) {
+			y += sign(vy);
+		} else {
+			chaseY = y;
+			endChaseY = y;
+			vy = 0;
+			break;
+		}
+	}
+}
+
+
+
 function getCurrentDepth(obj) {
 	if (!instance_exists(oBackground)) return 0;
 	if (!instance_exists(obj)) return 0;

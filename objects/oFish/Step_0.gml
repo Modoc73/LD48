@@ -9,7 +9,7 @@ if (!isChasing)  {
 }
 
 if (instance_exists(oController)) {
-	chaseY = clamp(chaseY, 100, oController.totalHeight-100);
+	chaseY = clamp(chaseY, 10, oController.totalHeight-10);
 }
 
 
@@ -22,6 +22,7 @@ if (isFollowing == false && object_index != oPlayerFish) {
 
 addWaterFriction();
 
+doCollisions();
 
-x += vx;
-y += vy;
+//x += vx;
+//y += vy;

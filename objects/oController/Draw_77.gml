@@ -6,4 +6,5 @@ if (surface_exists(application_surface)) {
 	shader_set_uniform_f(uniformPosition, camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]));
 	draw_surface(application_surface, 0, 0);	
 	shader_reset();
+	
 }

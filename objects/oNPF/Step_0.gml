@@ -46,13 +46,13 @@ if (y < getDepthTop(self)) {
 	forceStop = true;
 }
 
-if (x < 200) {
-	chaseX = 200;
+if (x < 0) {
+	chaseX = 0;
 	endChaseX = random_range(200, 300);
 	forceStop = true;
 }
-if (x > room_width -200) {
-	chaseX = room_width-200;
+if (x > room_width ) {
+	chaseX = room_width;
 	endChaseX = room_width-random_range(200, 300);
 	forceStop = true;
 }
