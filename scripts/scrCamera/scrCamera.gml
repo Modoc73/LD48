@@ -42,5 +42,7 @@ function cameraFollow(obj){
 	
 	cy = clamp(cy, 0, totalHeight - h);
 	
+	cx = clamp(cx, 0, room_width);
+	
 	camera_set_view_pos(view_camera[0], cx, cy);
 }

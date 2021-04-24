@@ -3,3 +3,5 @@ if (instance_exists(oBackground)) {
 }
 
 cameraFollow(oPlayerFish);
+
+spawner();

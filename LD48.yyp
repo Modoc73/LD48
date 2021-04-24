@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"sprJellyfish","path":"sprites/sprJellyfish/sprJellyfish.yy",},"order":3,},
     {"id":{"name":"oYellowFish","path":"objects/oYellowFish/oYellowFish.yy",},"order":2,},
     {"id":{"name":"scrFish","path":"scripts/scrFish/scrFish.yy",},"order":0,},
     {"id":{"name":"sprDoryFish","path":"sprites/sprDoryFish/sprDoryFish.yy",},"order":1,},
@@ -22,6 +23,7 @@
     {"id":{"name":"oDoryFish","path":"objects/oDoryFish/oDoryFish.yy",},"order":3,},
     {"id":{"name":"scrEatable","path":"scripts/scrEatable/scrEatable.yy",},"order":2,},
     {"id":{"name":"oEatable","path":"objects/oEatable/oEatable.yy",},"order":6,},
+    {"id":{"name":"scrSpawner","path":"scripts/scrSpawner/scrSpawner.yy",},"order":3,},
     {"id":{"name":"splash","path":"rooms/splash/splash.yy",},"order":0,},
   ],
   "Options": [
