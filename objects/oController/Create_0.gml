@@ -19,3 +19,6 @@ shaderTime = 0.0;
 repeat(50) {
 	particlesDust();	
 }
+
+font = font_add_sprite_ext(sprFont, "abcdefghijklmnopqrstuvwxyz", false, 0);
+draw_set_font(font);

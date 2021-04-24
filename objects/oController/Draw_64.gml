@@ -9,5 +9,11 @@ for(var i = 0; i < health; i++) {
 	draw_sprite(sprBubble, 0, w - (sprW*0.5) - padding -((sprW*1.1)*i), (sprW*0.5) + padding);	
 }
 
+draw_set_font(font);
+// Draw Tasks
+var sprW = 12;
+var xpos = (sprW*0.5) + padding;
+var ypos = (sprW*0.5) + padding;
+draw_sprite(sprTasks, currentTask, xpos , ypos);	
 
-draw_text(10, 10, "Current Depth: " + string(getCurrentDepth(oPlayerFish)));
+draw_text(xpos + 24, ypos, taskName);

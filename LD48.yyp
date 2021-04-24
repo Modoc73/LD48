@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"sprFont","path":"sprites/sprFont/sprFont.yy",},"order":9,},
     {"id":{"name":"sprJellyfish","path":"sprites/sprJellyfish/sprJellyfish.yy",},"order":3,},
     {"id":{"name":"oYellowFish","path":"objects/oYellowFish/oYellowFish.yy",},"order":2,},
     {"id":{"name":"scrFish","path":"scripts/scrFish/scrFish.yy",},"order":0,},
@@ -7,9 +8,11 @@
     {"id":{"name":"sprDoryFish","path":"sprites/sprDoryFish/sprDoryFish.yy",},"order":1,},
     {"id":{"name":"sprRockFaces","path":"sprites/sprRockFaces/sprRockFaces.yy",},"order":5,},
     {"id":{"name":"oClownfish","path":"objects/oClownfish/oClownfish.yy",},"order":1,},
+    {"id":{"name":"sprRing","path":"sprites/sprRing/sprRing.yy",},"order":10,},
     {"id":{"name":"sprFish","path":"sprites/sprFish/sprFish.yy",},"order":1,},
     {"id":{"name":"scrCamera","path":"scripts/scrCamera/scrCamera.yy",},"order":1,},
     {"id":{"name":"scrTasks","path":"scripts/scrTasks/scrTasks.yy",},"order":5,},
+    {"id":{"name":"sprTasks","path":"sprites/sprTasks/sprTasks.yy",},"order":8,},
     {"id":{"name":"oBackground","path":"objects/oBackground/oBackground.yy",},"order":4,},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},"order":10,},
     {"id":{"name":"sprFishFood","path":"sprites/sprFishFood/sprFishFood.yy",},"order":3,},

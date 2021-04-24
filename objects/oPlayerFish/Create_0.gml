@@ -24,3 +24,4 @@ randomY = 0.03;
 randomDistX = 2;
 randomDistY = 1.6;
 
+foodEaten = 0;
