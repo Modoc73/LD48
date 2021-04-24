@@ -15,7 +15,7 @@ void main()
 	
 	vec2 distort = v_vTexcoord;
 	
-	
+	/*
 	for (int i = 0; i < divisions; i++) {
 		float interval = float(i);
 		distMap += sin(time*0.001)*0.1 + sin(interval*(v_vTexcoord.x + (time*0.001)))*(1.0+sin(time*0.0001)*0.2) - (sin((time*0.005) / (v_vTexcoord.y/0.5))*0.1);
@@ -27,7 +27,7 @@ void main()
 	
 	distMap =( 1.0 + distMap) * 0.1;
 	
-	distMap.b *= 1.5;
+	distMap.b *= 1.5;*/
 	
 	
 	
