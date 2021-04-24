@@ -1,6 +1,9 @@
 {
   "resources": [
+    {"id":{"name":"scrFish","path":"scripts/scrFish/scrFish.yy",},"order":0,},
+    {"id":{"name":"sprFish","path":"sprites/sprFish/sprFish.yy",},"order":1,},
     {"id":{"name":"sprSplash","path":"sprites/sprSplash/sprSplash.yy",},"order":0,},
+    {"id":{"name":"oFish","path":"objects/oFish/oFish.yy",},"order":1,},
     {"id":{"name":"game","path":"rooms/game/game.yy",},"order":1,},
     {"id":{"name":"oSplash","path":"objects/oSplash/oSplash.yy",},"order":0,},
     {"id":{"name":"splash","path":"rooms/splash/splash.yy",},"order":0,},
@@ -23,8 +26,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"splash","path":"rooms/splash/splash.yy",},},
     {"roomId":{"name":"game","path":"rooms/game/game.yy",},},
+    {"roomId":{"name":"splash","path":"rooms/splash/splash.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -50,7 +53,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.2.556",
+    "IDEVersion": "2.3.2.560",
   },
   "resourceVersion": "1.4",
   "name": "LD48",
