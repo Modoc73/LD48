@@ -23,3 +23,10 @@ repeat(50) {
 font = font_add_sprite_ext(sprFont, "abcdefghijklmnopqrstuvwxyz1234567890:.", false, 0);
 draw_set_font(font);
 topText = "";
+
+
+teethTotalTime = room_speed*5;
+teethTimer = teethTotalTime;
+teethY = 0;
+doTeeth = false;
+fadeIn = 1;

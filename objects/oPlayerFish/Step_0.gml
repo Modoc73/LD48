@@ -11,3 +11,4 @@ if (isChasing) {
 	chaseX = clamp(mouse_x, 10, room_width-10);
 	chaseY = mouse_y;
 }
+

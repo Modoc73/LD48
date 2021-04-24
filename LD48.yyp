@@ -6,6 +6,7 @@
     {"id":{"name":"scrFish","path":"scripts/scrFish/scrFish.yy",},"order":0,},
     {"id":{"name":"tileRockFace","path":"tilesets/tileRockFace/tileRockFace.yy",},"order":0,},
     {"id":{"name":"sprDoryFish","path":"sprites/sprDoryFish/sprDoryFish.yy",},"order":1,},
+    {"id":{"name":"sprTeeth","path":"sprites/sprTeeth/sprTeeth.yy",},"order":11,},
     {"id":{"name":"sprRockFaces","path":"sprites/sprRockFaces/sprRockFaces.yy",},"order":5,},
     {"id":{"name":"oClownfish","path":"objects/oClownfish/oClownfish.yy",},"order":1,},
     {"id":{"name":"sprRing","path":"sprites/sprRing/sprRing.yy",},"order":10,},

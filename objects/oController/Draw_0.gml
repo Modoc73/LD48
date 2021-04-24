@@ -1,5 +1,11 @@
+// Fade
+var op = 0.1;
+var percent = 1-(teethTimer/teethTotalTime);
+op+= percent*0.5;
 
-draw_set_alpha(0.1);
+
+
+draw_set_alpha(op);
 gpu_set_blendmode(bm_subtract);
 var c1 = make_color_rgb(0, 0, 0);
 var c2 = make_color_rgb(160,160,160);
