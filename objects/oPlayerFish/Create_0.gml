@@ -1,3 +1,4 @@
+event_inherited();
 vx = 0;
 vy = 0;
 maxSpeed = 32;
@@ -16,3 +17,9 @@ isChasing = false;
 facing_direction = 0;
 image_speed = 0.2;
 scaleY = 1;
+
+randomX = 0.02;
+randomY = 0.03;
+
+randomDistX = 2;
+randomDistY = 1.6;
