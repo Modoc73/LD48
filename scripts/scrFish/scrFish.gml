@@ -55,6 +55,9 @@ function stopChasing() {
 
 	
 	isChasing = false;
+	if (object_index != oPlayerFish) {
+	waitChaseTime = waitChaseTimer;
+	}
 }
 
 

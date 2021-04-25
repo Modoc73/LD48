@@ -18,11 +18,16 @@ if (isFollowing == false && object_index != oPlayerFish) {
 	evadePoint(chaseX, chaseY);
 } else {
 	followPoint(chaseX, chaseY);
+	
 }
 
 addWaterFriction();
 
-doCollisions();
+//doCollisions();
 
-//x += vx;
-//y += vy;
+x += vx;
+y += vy;
+if (waitChaseTime > 0 && isChasing) {
+	x = xprevious;
+	y = yprevious;
+}

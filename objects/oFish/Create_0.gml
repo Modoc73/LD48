@@ -16,6 +16,8 @@ escapeDistance = 200;
 
 chasingTimer = room_speed*5;
 restTime = room_speed*5;
+waitChaseTimer = room_speed*0.5;
+waitChaseTime = 0;
 
 isChasing = false;
 

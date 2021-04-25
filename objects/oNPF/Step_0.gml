@@ -3,28 +3,40 @@ event_inherited();
 var closestNPF = noone;
 var dist = -1;
 if (chasingTimer <= 0) {
-for (var i = 0; i < instance_number(oFish); i++) {
-	var inst = instance_find(oFish, i);
-	if (inst.object_index == object_index) continue;
+	for (var i = 0; i < instance_number(targetableFish); i++) {
+		var inst = instance_find(targetableFish, i);
+		if (inst.object_index == object_index) continue;
+		if (inst == self) continue;
 	
-	var instDist = distance_to_object(inst);
-	
-	if (instDist < dist || dist == -1) {
-		closestNPF = inst;
-		dist = instDist;
+		var instDist = distance_to_object(inst);
+		if (instDist < chaseDistance) {
+			if (instDist < dist || dist == -1 ) {
+			
+				closestNPF = inst;
+				dist = instDist;
+			}
+		}
 	}
-}
+	
+	if (targetableFish == oFish) {
+		var instDist = distance_to_object(oPlayerFish);
+		if (instDist < chaseDistance) {
+			closestNPF = oPlayerFish;
+		}	
+	}
 }
 
 // Start Chasing
 if (closestNPF !=noone ) {
-	if (closestNPF.isChasing == false && closestNPF.beingChased == noone && chasing == noone) {
+	if ((closestNPF.isChasing == false || closestNPF.object_index == oPlayerFish) && closestNPF.beingChased == noone && chasing == noone) {
 		isChasing = true;
 		isFollowing = true;;
 		chasing = closestNPF;
-		closestNPF.beingChased = self
-		closestNPF.isFollowing = false;
+		closestNPF.beingChased = self;
 		closestNPF.isChasing = true;
+		
+		closestNPF.isFollowing = false;
+		
 		
 	}
 }
@@ -101,8 +113,11 @@ if (chasing) {
 	if (instance_exists(chasing)) {
 		var distFrom = distance_to_object(chasing);
 		
-		chaseX = chasing.x;
-		chaseY = chasing.y;
+		waitChaseTime--;
+		if(waitChaseTime < 0) {
+			chaseX = chasing.x;
+			chaseY = chasing.y;
+		}
 		if (distFrom > escapeDistance || forceStop) {
 			with(chasing) {
 				stopChasing();
@@ -122,6 +137,7 @@ if (chasing) {
 
 if (beingChased == noone && chasing == noone) {
 	chasingTimer--;
+	isChasing = false;
 } else {
 	chasingTimer++;	
 }
