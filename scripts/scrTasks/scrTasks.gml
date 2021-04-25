@@ -7,6 +7,7 @@ function tasksInit() {
 	// Task 2
 	isTiming = false;
 	taskTime = 0;
+	tickSound = -1;
 }
 
 function doTasks() {
@@ -29,16 +30,19 @@ function doTasks() {
 				var rings = instance_number(oRing);
 				var tRings = rings;
 			if (isTiming) {
+			
 				if (taskTime > 0) {
 					taskTime--;
 					
 					var sec = taskTime/room_speed;
+					
 					
 					topText = string(sec);
 					
 					
 				} else {
 					stopTaskTimer();	
+					audio_stop_sound(sndTick);
 				}
 				
 				var allDone = true;
@@ -55,9 +59,12 @@ function doTasks() {
 				if (allDone) {
 					with (oRing) instance_destroy();
 					taskDone();
+					audio_stop_sound(sndTick);
 				}
 				
 			}
+			var p = 1 + (1-(tRings/rings))*0.2;
+			audio_sound_pitch(tickSound, p);
 			taskText = tRings;
 			break;
 	}
@@ -75,6 +82,7 @@ function stopTaskTimer() {
 	with (oController) {
 		isTiming = false;	
 		topText = "";
+		audio_play_sound(sndTaskFail, 10, 0);
 	}
 	with (oRing) {
 		deactivateRing(self);	

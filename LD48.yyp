@@ -1,6 +1,8 @@
 {
   "resources": [
+    {"id":{"name":"sndTaskFail","path":"sounds/sndTaskFail/sndTaskFail.yy",},"order":12,},
     {"id":{"name":"sndSplash6","path":"sounds/sndSplash6/sndSplash6.yy",},"order":6,},
+    {"id":{"name":"sndTick","path":"sounds/sndTick/sndTick.yy",},"order":13,},
     {"id":{"name":"sprFont","path":"sprites/sprFont/sprFont.yy",},"order":8,},
     {"id":{"name":"sprJellyfish","path":"sprites/sprJellyfish/sprJellyfish.yy",},"order":3,},
     {"id":{"name":"oYellowFish","path":"objects/oYellowFish/oYellowFish.yy",},"order":2,},
@@ -22,6 +24,7 @@
     {"id":{"name":"scrTasks","path":"scripts/scrTasks/scrTasks.yy",},"order":5,},
     {"id":{"name":"sprTasks","path":"sprites/sprTasks/sprTasks.yy",},"order":7,},
     {"id":{"name":"sndSplash3","path":"sounds/sndSplash3/sndSplash3.yy",},"order":3,},
+    {"id":{"name":"sndMusic","path":"sounds/sndMusic/sndMusic.yy",},"order":11,},
     {"id":{"name":"oJellyFish","path":"objects/oJellyFish/oJellyFish.yy",},"order":6,},
     {"id":{"name":"sndSplash5","path":"sounds/sndSplash5/sndSplash5.yy",},"order":5,},
     {"id":{"name":"scrRings","path":"scripts/scrRings/scrRings.yy",},"order":6,},
