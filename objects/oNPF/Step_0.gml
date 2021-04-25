@@ -1,4 +1,13 @@
+if (isDead) {
+	vx*=0.95;
+	vy*=0.95;
+	vy-=random_range(-0.02, 0.06);
+	facing_direction+=sign(vx)*0.3;
+	doCollisions();
+	return;
+}
 event_inherited();
+
 
 var closestNPF = noone;
 var dist = -1;

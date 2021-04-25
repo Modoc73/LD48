@@ -17,11 +17,13 @@ function doTasks() {
 			taskName = "eat";
 			dropFood();
 			if (instance_exists(oPlayerFish)) {
-				if (oPlayerFish.foodEaten >= 5) {
+				var eatFood = 6 - max(5,global.deaths);
+				if (oPlayerFish.foodEaten >= eatFood) {
 					taskDone();	
 				}
-				taskText = 5-oPlayerFish.foodEaten;
+				taskText = eatFood-oPlayerFish.foodEaten;
 			}
+			
 			
 			break;
 		case(2):
@@ -67,6 +69,23 @@ function doTasks() {
 			audio_sound_pitch(tickSound, p);
 			taskText = tRings;
 			break;
+			
+		case(3):
+			instance_activate_object(oKey);
+			var keys = instance_number(oKey);
+			taskName = "collect";
+			taskText = keys;
+			
+			if (keys <= 0) {
+				taskDone();	
+				currentTask++;
+				unlockedLevel++;
+			}
+		break;
+		case(4): // skipped break;
+		case(5):
+		
+		break;
 	}
 }
 

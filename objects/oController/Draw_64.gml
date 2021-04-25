@@ -28,6 +28,7 @@ if (doTeeth) {
 		audio_stop_sound(sndJaws);
 		audio_play_sound(sndChomp, 100, 0);
 		room_restart();	
+		global.deaths--;
 	}
 } else {
 	teethTimer = min(teethTimer + (teethTotalTime-teethTimer)*0.15, teethTotalTime);
