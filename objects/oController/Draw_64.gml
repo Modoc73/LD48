@@ -25,6 +25,8 @@ if (doTeeth) {
 		teethY = min(teethY+ry, 1);
 	
 	} else {
+		audio_stop_sound(sndJaws);
+		audio_play_sound(sndChomp, 100, 0);
 		room_restart();	
 	}
 } else {

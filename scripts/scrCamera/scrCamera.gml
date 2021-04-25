@@ -7,6 +7,8 @@ function cameraInit() {
 	cameraMaxDistance = 200;
 }
 
+
+
 function cameraFollow(obj){
 	if (!instance_exists(obj)) return;
 	
@@ -45,4 +47,17 @@ function cameraFollow(obj){
 	cx = clamp(cx, 0, room_width);
 	
 	camera_set_view_pos(view_camera[0], cx, cy);
+}
+
+
+function setCameraScale(scale) {
+	var w = 640*scale;
+	var h = 360*scale;
+	window_set_size(w, h);	
+	
+	var xx = display_get_width()*0.5 - (w*0.5);
+	var yy = display_get_height()*0.5 - (h*0.5);
+	
+	window_set_position(xx, yy);
+	global.screenScale = scale;
 }
