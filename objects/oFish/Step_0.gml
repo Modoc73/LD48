@@ -44,6 +44,9 @@ if (change > 10 && d < 300) {
 				case(6): sounds = -1; break;
 			}
 			if (sounds != -1) {
+				if (audio_is_playing(sounds)) {
+					audio_stop_sound(sounds);	
+				}
 				var snd = audio_play_sound(sounds, 0, false);
 				var volume = (1-(d/300) * min(1, (change/100)))*0.8;
 				audio_sound_gain(snd, volume, 0);

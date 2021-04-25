@@ -33,3 +33,7 @@ fadeIn = 1;
 
 var bg = audio_play_sound(sndBackgroundLoop, 50, true);
 audio_sound_gain(bg, 0.6, 0);
+
+global.screenScale = 2;
+
+jawsSound = -1;

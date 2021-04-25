@@ -25,6 +25,9 @@ function doTasks() {
 			break;
 		case(2):
 			taskName = "navigate";
+			instance_activate_object(oRing);
+				var rings = instance_number(oRing);
+				var tRings = rings;
 			if (isTiming) {
 				if (taskTime > 0) {
 					taskTime--;
@@ -39,10 +42,14 @@ function doTasks() {
 				}
 				
 				var allDone = true;
-				var rings = instance_number(oRing);;
-				with (oRing) {
-					if (!isActive) allDone = false;	
-					if (isActive) rings--;
+				
+				for (var i = 0; i < rings; i++) {
+					var inst = instance_find(oRing, i);
+					if (inst.isActive) {
+						tRings--;	
+					} else {
+						allDone = false;	
+					}
 				}
 				
 				if (allDone) {
@@ -50,8 +57,8 @@ function doTasks() {
 					taskDone();
 				}
 				
-				taskText = rings;
 			}
+			taskText = tRings;
 			break;
 	}
 }
@@ -60,7 +67,7 @@ function startTaskTimer() {
 	with (oController) {
 		if (isTiming == false) {
 			isTiming = true;
-			taskTime = room_speed * 16;
+			taskTime = room_speed * 18;
 		}
 	}
 }
@@ -87,4 +94,6 @@ function taskDone() {
 	taskTick = 0;
 	taskText = "";
 	topText = "";
+	
+	audio_play_sound(sndNextLevel, 10, false);
 }
