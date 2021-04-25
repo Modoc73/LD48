@@ -14,6 +14,19 @@ function particlesInit(){
 	
 	part_type_life(dust, room_speed, room_speed*10);
 	
+	bubble = part_type_create();
+	part_type_shape(bubble, pt_shape_ring);
+	part_type_color1(bubble, c_white);
+	part_type_alpha3(bubble, 0.7, random_range(0.4, 0.9), 0);
+	
+	part_type_scale(bubble, 0.1, 0.1);
+	part_type_size(bubble, 0.2, 1, -0.01, 0);
+	part_type_speed(bubble, 0.05, 2, -0.01, 0);
+	part_type_direction(bubble, 50, 130, 0, 10);
+	
+	part_type_life(bubble, room_speed, room_speed*2);
+	
+	
 }
 
 function particlesDust() {
@@ -28,4 +41,15 @@ function particlesDust() {
 	var ry = cy + random(ch);
 	
 	part_particles_create(partSys, rx, ry, dust, 1);
+}
+
+function particleBubbles() {
+	with (oFish) {
+		if (abs(x-xprevious) >= maxSpeed || abs(y-yprevious) >= maxSpeed) {
+			with(oController) {
+				part_particles_create(partSys, other.x + random_range(-2, 2), other.y, bubble, 1);
+				
+			}
+		}
+	}
 }
