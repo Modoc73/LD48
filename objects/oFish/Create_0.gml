@@ -28,6 +28,7 @@ isFollowing = true;
 facing_direction = 0;
 prev_direction = 0;
 image_speed = 0.2;
+image_index = random(image_number);
 scaleY = 1;
 
 

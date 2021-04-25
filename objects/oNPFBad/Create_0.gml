@@ -9,6 +9,6 @@ acceleration = random_range(0.2, 0.4);
 chasingTimer = room_speed*5;
 restTime = room_speed*2;
 
-chaseDistance = 100;
+chaseDistance = 120;
 waitChaseTimer = room_speed*1.5;
 waitChaseTime = waitChaseTimer;

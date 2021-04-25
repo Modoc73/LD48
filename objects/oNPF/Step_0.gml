@@ -62,7 +62,7 @@ if (biteFish) {
 var food = instance_nearest(x, y, oFishFood);
 
 if (food != noone) {
-	if (distance_to_object(food) < 100) {
+	if (distance_to_object(food) < 120) {
 		chaseX = food.x;
 		chaseY = food.y;
 		isChasing = true;

@@ -17,7 +17,7 @@ function particlesInit(){
 	bubble = part_type_create();
 	part_type_shape(bubble, pt_shape_ring);
 	part_type_color1(bubble, c_white);
-	part_type_alpha3(bubble, 0.7, random_range(0.4, 0.9), 0);
+	part_type_alpha3(bubble, 0.7, 0.7, 0);
 	
 	part_type_scale(bubble, 0.1, 0.1);
 	part_type_size(bubble, 0.2, 1, -0.01, 0);
@@ -25,6 +25,20 @@ function particlesInit(){
 	part_type_direction(bubble, 50, 130, 0, 10);
 	
 	part_type_life(bubble, room_speed, room_speed*2);
+	
+	bigDust = part_type_create();
+	part_type_shape(bigDust, pt_shape_cloud);
+	part_type_color1(bigDust, c_white);
+	part_type_alpha3(bigDust, 0.0, 0.4, 0);
+	
+	part_type_scale(bigDust, 0.8, 0.8);
+	part_type_size(bigDust, 1, 6, -0.01, 0);
+	part_type_speed(bigDust, 0.05, 2, -0.03, 0);
+	part_type_direction(bigDust, 360, 0, 3, 0);
+	
+	part_type_orientation(bigDust, 0, 360, 1, 0, false);
+	
+	part_type_life(bigDust, room_speed*6, room_speed*14);
 	
 	
 }
@@ -41,6 +55,12 @@ function particlesDust() {
 	var ry = cy + random(ch);
 	
 	part_particles_create(partSys, rx, ry, dust, 1);
+	
+	
+	if (random(1) > 0.98) {
+		part_particles_create(partSys, cx + random(cw), ry, bigDust, 1);
+	
+	}
 }
 
 function particleBubbles() {

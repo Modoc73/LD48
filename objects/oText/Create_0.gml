@@ -1,6 +1,6 @@
 text = "hello world";
 
-font = font_add_sprite_ext(sprFont, "abcdefghijklmnopqrstuvwxyz1234567890:.", false, 0);
+font = font_add_sprite_ext(sprFont, "abcdefghijklmnopqrstuvwxyz1234567890:.!", false, 0);
 
 displayText = "";
 characters = 0;

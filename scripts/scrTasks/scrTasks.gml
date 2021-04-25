@@ -89,11 +89,6 @@ function doTasks() {
 		case(4): // skipped break;
 		case(5):
 		
-			if (taskTick == room_speed*10) {
-				var t = instance_create_depth(0, 0, depth, oText);
-				t.text = "these plastic bags are deadly.";
-				t.autoRemove = true;
-			}
 		
 		break;
 	}
