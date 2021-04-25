@@ -30,3 +30,6 @@ teethTimer = teethTotalTime;
 teethY = 0;
 doTeeth = false;
 fadeIn = 1;
+
+var bg = audio_play_sound(sndBackgroundLoop, 50, true);
+audio_sound_gain(bg, 1, 0);

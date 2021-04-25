@@ -1,3 +1,14 @@
+
+if (health <= 0) {
+	x+=vx;
+	y+=vy;
+	
+	vy-=0.02;
+	vy = clamp(vy, -1, abs(vy));
+	addWaterFriction();
+	return;
+}
+
 event_inherited();
 
 isChasing = mouse_check_button(mb_left);

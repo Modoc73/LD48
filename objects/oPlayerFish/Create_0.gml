@@ -25,3 +25,8 @@ randomDistX = 2;
 randomDistY = 1.6;
 
 foodEaten = 0;
+
+hurtTime = room_speed*2;
+hurtTimer = 0;
+modifier = 1;
+health = 1;

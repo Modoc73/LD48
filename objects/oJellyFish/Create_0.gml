@@ -3,4 +3,4 @@
 image_speed = 0.4;
 
 maxY = ystart;
-vy = 0;
+vy = random(2);

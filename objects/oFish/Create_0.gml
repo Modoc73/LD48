@@ -26,6 +26,7 @@ isFollowing = true;
 
 
 facing_direction = 0;
+prev_direction = 0;
 image_speed = 0.2;
 scaleY = 1;
 
@@ -37,4 +38,4 @@ randomY = random_range(0.005, 0.04);
 randomDistX = random_range(1.5, 2);
 randomDistY = random_range(1.5, 2);
 
-depthZone = 0;
+depthZone = floor(y/(360*2));

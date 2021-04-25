@@ -1,5 +1,4 @@
 {
-  "name": "tileRockFace",
   "spriteId": {
     "name": "sprRockFaces",
     "path": "sprites/sprRockFaces/sprRockFaces.yy",
@@ -58,6 +57,7 @@
     "path": "folders/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
+  "name": "tileRockFace",
   "tags": [],
   "resourceType": "GMTileSet",
 }

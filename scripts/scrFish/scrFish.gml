@@ -111,14 +111,14 @@ function getDepthTop(obj) {
 	if (!instance_exists(obj)) return 0;
 	
 	var level = 0;
-	
+	/*
 	for (var i = 0; i < array_length(oBackground.backgroundLevel); i++) {
 		if (obj.depthZone > oBackground.backgroundLevel[i, 0] && obj.depthZone <= oBackground.backgroundLevel[i, 1]) {
 			level = i;
 			break;
 		}
-	}
-	return oBackground.backgroundLevel[level, 0];
+	}*/
+	return oBackground.backgroundLevel[obj.depthZone, 0];
 }
 
 function getDepthBottom(obj) {
@@ -126,12 +126,12 @@ function getDepthBottom(obj) {
 	if (!instance_exists(obj)) return 0;
 	
 	var level = 0;
-	
+	/*
 	for (var i = 0; i < array_length(oBackground.backgroundLevel); i++) {
 		if (obj.depthZone > oBackground.backgroundLevel[i, 0] && obj.depthZone <= oBackground.backgroundLevel[i, 1]) {
 			level = i;
 			break;
 		}
-	}
-	return oBackground.backgroundLevel[level, 1];
+	}*/
+	return oBackground.backgroundLevel[obj.depthZone, 1];
 }

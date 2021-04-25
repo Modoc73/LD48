@@ -60,7 +60,7 @@ function startTaskTimer() {
 	with (oController) {
 		if (isTiming == false) {
 			isTiming = true;
-			taskTime = room_speed * 15;
+			taskTime = room_speed * 16;
 		}
 	}
 }
@@ -77,7 +77,7 @@ function stopTaskTimer() {
 function dropFood() {
 	if (taskTick mod (room_speed*2) == 0 || taskTick mod (room_speed*5) == 0) {
 		var rx = random_range(100, room_width-100);
-		instance_create_layer(rx, -50, "Instances", oFishFood);	
+		instance_create_layer(rx, -50, "Tasks", oFishFood);	
 	}
 }
 
