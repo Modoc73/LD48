@@ -12,6 +12,7 @@
     {"id":{"name":"oTutorial","path":"objects/oTutorial/oTutorial.yy",},"order":10,},
     {"id":{"name":"Sprite20","path":"sprites/Sprite20/Sprite20.yy",},"order":14,},
     {"id":{"name":"tileRockFace","path":"tilesets/tileRockFace/tileRockFace.yy",},"order":0,},
+    {"id":{"name":"oTextTrigger","path":"objects/oTextTrigger/oTextTrigger.yy",},"order":12,},
     {"id":{"name":"sprDoryFish","path":"sprites/sprDoryFish/sprDoryFish.yy",},"order":1,},
     {"id":{"name":"sndBackgroundLoop","path":"sounds/sndBackgroundLoop/sndBackgroundLoop.yy",},"order":0,},
     {"id":{"name":"sprTeeth","path":"sprites/sprTeeth/sprTeeth.yy",},"order":10,},

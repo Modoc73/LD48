@@ -8,3 +8,4 @@ instance_activate_region(left, top, width, height, true);
 instance_activate_object(oWall);
 instance_activate_object(oPlayerFish)
 instance_activate_object(oBackground);
+instance_activate_object(oText);

@@ -17,7 +17,7 @@ function doTasks() {
 			taskName = "eat";
 			dropFood();
 			if (instance_exists(oPlayerFish)) {
-				var eatFood = 6 - max(5,global.deaths);
+				var eatFood = 5 - min(5,global.deaths);
 				if (oPlayerFish.foodEaten >= eatFood) {
 					taskDone();	
 				}
@@ -80,10 +80,20 @@ function doTasks() {
 				taskDone();	
 				currentTask++;
 				unlockedLevel++;
+				
+				var t = instance_create_depth(0, 0, depth, oText);
+				t.text = "just keep swimming...";
+				t.autoRemove = true;
 			}
 		break;
 		case(4): // skipped break;
 		case(5):
+		
+			if (taskTick == room_speed*10) {
+				var t = instance_create_depth(0, 0, depth, oText);
+				t.text = "these plastic bags are deadly.";
+				t.autoRemove = true;
+			}
 		
 		break;
 	}
