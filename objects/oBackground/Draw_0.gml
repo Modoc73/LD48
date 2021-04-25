@@ -21,7 +21,7 @@ if (surface_exists(surface) && surface_exists(surfaceRocks)) {
 	surface_set_target(surfaceRocks);
 	draw_clear_alpha(c_white, 0);
 	gpu_set_blendmode_ext(bm_src_alpha, bm_normal);
-	var lay_id = layer_get_id("Rock");
+	var lay_id = layer_get_id("Rocks");
 	var map_id = layer_tilemap_get_id(lay_id);
 	draw_tilemap(map_id, -cx, -cy);
 	gpu_set_blendmode(bm_normal);
