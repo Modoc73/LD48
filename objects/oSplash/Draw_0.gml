@@ -28,6 +28,6 @@ black = min(black+1, 58);
 	draw_self();
 	
 	if (black == 0) {
-		room_goto(game);	
+		room_goto(tutorial);	
 	}
 }

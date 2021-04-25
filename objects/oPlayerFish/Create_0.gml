@@ -1,9 +1,9 @@
 event_inherited();
 vx = 0;
 vy = 0;
-maxSpeed = 5;
+maxSpeed = 4.5;
 acceleration = 0.3;
-minDistance = 48;
+minDistance = 36;
 
 chaseX = x;
 chaseY = y;
@@ -18,11 +18,11 @@ facing_direction = 0;
 image_speed = 0.2;
 scaleY = 1;
 
-randomX = 0.02;
-randomY = 0.03;
+randomX = 0.006;
+randomY = 0.01;
 
 randomDistX = 2;
-randomDistY = 1.6;
+randomDistY = 1.3;
 
 foodEaten = 0;
 

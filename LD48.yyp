@@ -9,6 +9,7 @@
     {"id":{"name":"oYellowFish","path":"objects/oYellowFish/oYellowFish.yy",},"order":1,},
     {"id":{"name":"scrFish","path":"scripts/scrFish/scrFish.yy",},"order":0,},
     {"id":{"name":"sprPlasticBag","path":"sprites/sprPlasticBag/sprPlasticBag.yy",},"order":16,},
+    {"id":{"name":"oTutorial","path":"objects/oTutorial/oTutorial.yy",},"order":10,},
     {"id":{"name":"Sprite20","path":"sprites/Sprite20/Sprite20.yy",},"order":14,},
     {"id":{"name":"tileRockFace","path":"tilesets/tileRockFace/tileRockFace.yy",},"order":0,},
     {"id":{"name":"sprDoryFish","path":"sprites/sprDoryFish/sprDoryFish.yy",},"order":1,},
@@ -33,6 +34,7 @@
     {"id":{"name":"oJellyFish","path":"objects/oJellyFish/oJellyFish.yy",},"order":4,},
     {"id":{"name":"sprKey","path":"sprites/sprKey/sprKey.yy",},"order":15,},
     {"id":{"name":"sndSplash5","path":"sounds/sndSplash5/sndSplash5.yy",},"order":5,},
+    {"id":{"name":"tutorial","path":"rooms/tutorial/tutorial.yy",},"order":2,},
     {"id":{"name":"scrRings","path":"scripts/scrRings/scrRings.yy",},"order":6,},
     {"id":{"name":"oBackground","path":"objects/oBackground/oBackground.yy",},"order":2,},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},"order":6,},
@@ -49,6 +51,7 @@
     {"id":{"name":"sprLocked","path":"sprites/sprLocked/sprLocked.yy",},"order":6,},
     {"id":{"name":"oFishFood","path":"objects/oFishFood/oFishFood.yy",},"order":3,},
     {"id":{"name":"game","path":"rooms/game/game.yy",},"order":1,},
+    {"id":{"name":"oText","path":"objects/oText/oText.yy",},"order":11,},
     {"id":{"name":"sprWall","path":"sprites/sprWall/sprWall.yy",},"order":5,},
     {"id":{"name":"oSplash","path":"objects/oSplash/oSplash.yy",},"order":0,},
     {"id":{"name":"sprYellowFish","path":"sprites/sprYellowFish/sprYellowFish.yy",},"order":2,},
@@ -87,6 +90,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"game","path":"rooms/game/game.yy",},},
+    {"roomId":{"name":"tutorial","path":"rooms/tutorial/tutorial.yy",},},
     {"roomId":{"name":"splash","path":"rooms/splash/splash.yy",},},
   ],
   "Folders": [

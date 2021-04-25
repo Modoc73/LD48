@@ -16,6 +16,7 @@ function activateRing(obj){
 					if (!audio_is_playing(sndTick) ) {
 						tickSound = audio_play_sound(sndTick, 9, true);	
 					}
+		startTaskTimer();
 		}
 	}
 

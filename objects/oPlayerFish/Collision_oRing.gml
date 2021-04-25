@@ -4,5 +4,4 @@ if (oController.currentTask == 1) {
 
 	with(other) activateRing(self);	
 
-	startTaskTimer();
 }
