@@ -16,6 +16,7 @@
     {"id":{"name":"scrCamera","path":"scripts/scrCamera/scrCamera.yy",},"order":1,},
     {"id":{"name":"scrTasks","path":"scripts/scrTasks/scrTasks.yy",},"order":5,},
     {"id":{"name":"sprTasks","path":"sprites/sprTasks/sprTasks.yy",},"order":8,},
+    {"id":{"name":"oJellyFish","path":"objects/oJellyFish/oJellyFish.yy",},"order":6,},
     {"id":{"name":"scrRings","path":"scripts/scrRings/scrRings.yy",},"order":6,},
     {"id":{"name":"oBackground","path":"objects/oBackground/oBackground.yy",},"order":4,},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},"order":10,},

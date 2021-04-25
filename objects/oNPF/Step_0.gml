@@ -44,7 +44,10 @@ if (closestNPF !=noone ) {
 
 var forceStop = false;
 if (chasingTimer > room_speed*10) forceStop = true;
-
+if (biteFish) {
+	forceStop = true;
+	biteFish = false;
+}
 
 
 var food = instance_nearest(x, y, oFishFood);

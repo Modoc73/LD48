@@ -23,10 +23,10 @@ if (isFollowing == false && object_index != oPlayerFish) {
 
 addWaterFriction();
 
-//doCollisions();
+doCollisions();
 
-x += vx;
-y += vy;
+//x += vx;
+//y += vy;
 if (waitChaseTime > 0 && isChasing) {
 	x = xprevious;
 	y = yprevious;
